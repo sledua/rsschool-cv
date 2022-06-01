@@ -45,12 +45,13 @@
 
 <br>
 
-## Contact 
+## Contact
+
 <p class="flex">
 	<a href="mailto:art.sled.ua@gmail.com" class="link-mail" target="_blank"></a>
 	<a href="https://t.me/artSled" class="link-telegram" target="_blank"></a>
 	<a href="https://www.linkedin.com/in/artem-guida-27660917a" class="link-linked" target="_blank"></a>
-</p> 
+</p>
 
 <br>
 <br>
@@ -66,9 +67,10 @@ simultaneously \
 🧿 Committed team player, self-motivated.
 I am organized, ambitious and creative, as well as being a good
 team-player with excellent communication skills. I can adapt to new
-environments quickly. 
+environments quickly.
 
-## Skills ##
+## Skills
+
 <p align="center">
 🌶️ HTML \
 🌶️ CSS \
@@ -76,7 +78,8 @@ environments quickly.
 🌶️ Git 
 </p>
 
-## Examples ##
+## Examples
+
 ```
 <div class="container flex">
 	<div class="logo"><img src="img/logo.png" alt="logo"></div>
@@ -94,6 +97,7 @@ environments quickly.
 	</nav>
 </div>
 ```
+
 ```
 .navigation {
 	list-style-type: none;
@@ -124,10 +128,12 @@ environments quickly.
 	}
 }
 ```
+
 ```
 console.log('🛸')
 ```
-## Education ##
+
+## Education
 
 My specialized education does not apply, I am self-taught.😈
 
