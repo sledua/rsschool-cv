@@ -1,0 +1,7 @@
+html * {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 10px; /* size spec for rem 10px - 1rem */
+}
