@@ -1,7 +1,85 @@
+:root {
+	font-size: 10px; /* size spec for rem 10px - 1rem */
+	/*colors*/
+	--viking: #6dd0db;
+	--white: #fff;
+	--dark: #000;
+	--bg-header: #3d3d3d;
+}
+@font-face {
+	font-family: "OpenSans-Medium";
+	src: url("./assets/fonts/Open_Sans/OpenSans-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal; /*500*/
+}
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url("./assets/fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal; /*700*/
+}
+@font-face {
+	font-family: "Oswald-Bold";
+	src: url("./assets/fonts/Oswald/Oswald-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Oswald-Light";
+	src: url("./assets/fonts/Oswald/Oswald-Light.ttf") format("truetype");
+	font-style: normal; /*300*/
+}
 html * {
 	margin: 0;
 	padding: 0;
 }
 body {
-	font-size: 10px; /* size spec for rem 10px - 1rem */
+	font-family: "OpenSans-Medium", sans-serif;
+	font-weight: 500;
+	font-size: 1.7rem;
+	overflow-x: hidden;
+}
+h1,
+h3 {
+	font-family: "Oswald-Bold", sans-serif;
+	color: var(--viking);
+	text-transform: uppercase;
+	font-weight: 400;
+}
+h2 {
+	font-family: "Oswald-Light", sans-serif;
+	color: var(--dark);
+	text-transform: uppercase;
+	font-weight: 300;
+}
+header,
+footer {
+	background-color: var(--bg-header);
+	color: var(--white);
+}
+header {
+	grid-area: header;
+}
+main {
+	grid-area: main;
+	height: 100vh;
+}
+footer {
+	grid-area: footer;
+}
+.body-content {
+	display: grid;
+	grid-template-columns: 0.5fr 1.5fr;
+	grid-template-areas: 
+	"header main"
+	"header main"
+	"footer main";
+}
+.logo {
+	width: 19rem;
+	height: 5rem;
+	background-color: var(--white);
+	-webkit-mask-image: url("./assets/img/rs_school_js.svg") no-repeat center / contain;
+	mask-image: url("./assets/img/rs_school_js.svg") no-repeat center / contain;
+	
 }
