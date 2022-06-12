@@ -4,56 +4,105 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Artem Guida | Intern for frontend development</title>
+		<meta name="description" content="Artem Guida | Intern/Junior for frontend development">
+		<meta property="og:image" content="img/preview.png" />
+		<meta name="theme-color" content="#3d3d3d" />
+		<title>Artem Guida | Intern/Junior for frontend development</title>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
-	<body class="body-content">
+	<body class="flex body-content">
 		<header>
-			<nav></nav>
-			<h3>сontact info</h3>
-			<ul>
-				<li>Phone: <a href="tel:+380934666049">+380934666049</a></li>
-				<li>Email: <a href="mailto:art.sled.ua@gmail.com">art.sled.ua@gmail.com</a></li>
-				<li><a href="www.linkedin.com/in/artemguida-27660917a">L</a></li>
-				<li><a href="https://github.com/sledu">G</a></li>
-			</ul>
-			<h3>Languages</h3>
-			<div class="">English B1 Intermediate Russian C1 Advanced Ukrainian Native</div>
-			<h3>Skills</h3>
-			<div class="">JavaScript CSS 3 HTML 5 React</div>
+			<nav class="container">
+				<ul class="flex">
+					<li><a href="#bio">Bio</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#project">Project</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#additional">Additional</a></li>
+				</ul>
+			</nav>
 		</header>
-		<main>
-			<h1>Artem Guida</h1>
-		<h2>Intern react Developer</h2>
-
-		<div class="">
-			Experienced Front End. Skilled in HTML5, CSS and Java Script,(React,) https://github.com/sledua • Skilled in
-			multitasking and working on several projects simultaneously • Unique ability to improvise, grasp new skills and
-			troubleshoot problems • Experienced in communicating with the creative team and clients • Well-organized with an
-			ability to prioritize tasks • Easy learning, hardworking. Capable of working under time pressure and stress
-			conditions • Committed team player, self-motivated I am organized, ambitious and creative, as well as being a good
-			team-player with excellent communication skills. I can adapt to new environments quickly.
-		</div>
-		<h3>work experience</h3>
-		<div class="">Freelance Front-end developer March 2022 - present</div>
-		<h3>Project experience</h3>
-		<div class="">
-			React Native + Firebase https://github.com/sledua/WorkChecker mini CPM for time tracking according to the GEO
-			position of the employee, with reporting on the work undertaken. (Freelance project for cleaning company)
-		</div>
-		<h3>Education</h3>
-		<div class="">national university of farmacy 2010 - 2015 Pharmacist</div>
-		<h3>Additional education</h3>
-		<div class="">
-			ItGid JavaScript v.2.0 Udemy React JS. Практический Курс 2020 (вкл. Хуки, Классы, Redux) FrontendMentor My profile
-			with achievements https://www.frontendmentor.io/profile/sledua
-		</div>
+		<main class="container main">
+			<aside>
+				<div class="img-box">
+					<img src="./assets/img/autor.jfif" alt="sled Artem Guida">
+				</div>
+				<h3>Contact info</h3>
+				<ul>
+					<li>Phone: <a href="tel:+380934666049">+380934666049</a></li>
+					<li>Email: <a href="mailto:art.sled.ua@gmail.com">art.sled.ua@gmail.com</a></li>
+					<li><a href="www.linkedin.com/in/artemguida-27660917a">Linkedin</a></li>
+					<li><a href="https://github.com/sledu">GitHub</a></li>
+				</ul>
+				<h3>Languages</h3>
+				<ul>
+					<li>English B1 Intermediate</li>
+					<li>Russian C1 Advanced</li>
+					<li>Ukrainian Native</li>
+				</ul>
+				<h3>Skills</h3>
+				<ul>
+					<li>HTML 5</li>
+					<li>CSS 3</li>
+					<li>JavaScript</li>
+					<li>React</li>
+				</ul>
+			</aside>
+			<div class="sections">
+				<section class="section-name">
+					<h1>Artem Guida</h1>
+					<h2>Intern react Developer</h2>
+				</section>
+				<section class="section-bio" id="bio">
+					<h3>bio</h3>
+					<ul>
+						<li>Experienced Front End. Skilled in HTML5, CSS and Java Script,(React,) <a href="https://github.com/sledua">https://github.com/sledua</a></li>
+						<li>Skilled in multitasking and working on several projects simultaneously</li>
+						<li>Unique ability to improvise, grasp new skills and troubleshoot problems</li>
+						<li>Experienced in communicating with the creative team and clients</li>
+						<li>Well-organized with an ability to prioritize tasks</li>
+						<li>Easy learning, hardworking. Capable of working under time pressure and stress conditions</li>
+						<li>Committed team player, self-motivated I am organized, ambitious and creative, as well as being a good
+							team-player with excellent communication skills. I can adapt to new environments quickly.
+						</li>
+					</ul>
+				</section>
+				<section class="section-work" id="work">
+					<h3>work experience</h3>
+					<ul>
+						<li>Freelance Front-end developer March 2022 - present</li>
+					</ul>
+				</section>
+				<section class="section-project" id="project">
+					<h3>Project experience</h3>
+					<ul>
+						<li><a href="https://github.com/sledua/WorkChecker">React Native + Firebase</a> mini CPM for time tracking according to the GEO
+							position of the employee, with reporting on the work undertaken. (Freelance project for cleaning company)</li>
+					</ul>
+				</section>
+				<section class="section-education" id="education">
+					<h3>Education</h3>
+					<ul>
+						<li>national university of farmacy 2010 - 2015 Pharmacist</li>
+					</ul>
+				</section>
+				<section class="section-additional" id="additional">
+					<h3>Additional education</h3>
+					<ul>
+						<li>tGid JavaScript v.2.0</li>
+						<li>Udemy React JS. Практический Курс 2020 (вкл. Хуки, Классы, Redux)</li>
+						<li>FrontendMentor <a href="https://www.frontendmentor.io/profile/sledua">My profile with achievements</a> </li>
+					</ul>
+				</section>
+			</div>
 		</main>
 		<footer>
-			<div class="logo">
+			<div class="container flex">
+				<a href="https://rs.school/js/"><div class="logo"></div></a>
+				<p>All work was done by <a href="https://github.com/sledu">Artem</a> on A free course from The Rolling Scopes community for those who want to gain
+					knowledge and experience sufficient for employment as a Junior Software Engineer in JavaScript/Front-end. © 2022
+				</p>
 			</div>
-			<p>All work was done by Artem on
-				A free course from The Rolling Scopes community for those who want to gain knowledge and experience sufficient for employment as a Junior Software Engineer in JavaScript/Front-end.</p>
 		</footer>
 	</body>
 </html>
