@@ -1,7 +1,155 @@
+:root {
+	font-size: 10px; /* size spec for rem 10px - 1rem */
+	/*colors*/
+	--viking: #6dd0db;
+	--white: #fff;
+	--dark: #000;
+	--bg-header: #3d3d3d;
+}
+@font-face {
+	font-family: "OpenSans-Medium";
+	src: url("./assets/fonts/Open_Sans/OpenSans-Medium.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal; /*500*/
+}
+@font-face {
+	font-family: "OpenSans-Bold";
+	src: url("./assets/fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal; /*700*/
+}
+@font-face {
+	font-family: "Oswald-Bold";
+	src: url("./assets/fonts/Oswald/Oswald-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Oswald-Light";
+	src: url("./assets/fonts/Oswald/Oswald-Light.ttf") format("truetype");
+	font-style: normal; /*300*/
+}
+html {
+	scroll-behavior: smooth;
+}
 html * {
 	margin: 0;
 	padding: 0;
 }
 body {
-	font-size: 10px; /* size spec for rem 10px - 1rem */
+	font-family: "OpenSans-Medium", sans-serif;
+	font-weight: 500;
+	font-size: 1.7rem;
+	overflow-x: hidden;
+}
+h1,
+h3 {
+	font-family: "Oswald-Bold", sans-serif;
+	color: var(--viking);
+	text-transform: uppercase;
+	font-weight: 400;
+}
+h2 {
+	font-family: "Oswald-Light", sans-serif;
+	color: var(--dark);
+	text-transform: uppercase;
+	font-weight: 300;
+}
+ul li {
+	list-style-type: none;
+	padding-bottom: 0.4rem;
+}
+.flex {
+	display: flex;
+}
+header,
+footer {
+	background-color: var(--bg-header);
+	color: var(--white);
+	width: 100%;
+	align-items: center;
+}
+header nav ul li a {
+	color: var(--white);
+	line-height: 8rem;
+	text-decoration: none;
+	padding: 0 1rem;
+	text-transform: uppercase;
+	font-family: "Oswald-Bold", sans-serif;
+	transition: 0.3s;
+}
+header nav ul li:first-child a {
+	padding-left: 0;
+}
+header nav ul li a:hover {
+	cursor: pointer;
+	color: var(--viking);
+}
+.body-content {
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 100vh;
+}
+.container {
+	max-width: 1440px;
+	padding: 0 11rem;
+}
+.main {
+	display: grid;
+	grid-template-columns: 0.5fr 1.5fr;
+}
+aside > ul > li > a {
+	text-decoration: none;
+	color: var(--viking);
+	font-weight: bold;
+}
+.img-box {
+	padding-top: 0.8rem;
+	text-align: center;
+}
+.img-box img {
+	width: 70%;
+}
+.section-name h1 {
+	font-size: 7rem;
+	width: 30%;
+	line-height: 1;
+}
+.section-name h2 {
+	padding: 1rem 0;
+}
+section h3 {
+	padding: 1.4rem 0;
+	font-size: 2.5rem;
+}
+section > ul > li > a {
+	color: var(--viking);
+}
+footer {
+	margin-top: 5rem;
+}
+footer :first-child {
+	height: 25rem;
+	align-items: center;
+}
+.logo {
+	width: 19rem;
+	height: 5rem;
+	border: var(--white);
+	background-image: url(./assets/img/rs_school_js.svg);
+	background-repeat: no-repeat;
+	background-position-y: center;
+}
+footer :first-child p {
+	width: 90%;
+	text-align: end;
+}
+footer :first-child p a {
+	font-family: inherit;
+	color: var(--dark);
+	text-decoration: none;
+	font-weight: 800;
+}
+footer :first-child p a:hover {
+	color: red;
 }
