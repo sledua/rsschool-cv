@@ -1,2 +1,3 @@
-# rsschool-cv
-CV#1. Markdown &amp; Git
+https://sledua.github.io/rsschool-cv/cv
+
+https://sledua.github.io/rsschool-cv
